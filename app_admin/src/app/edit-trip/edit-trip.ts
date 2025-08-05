@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from "@angular/forms";
-import { TripDataService } from '../services/trip-data.service';
+import { TripDataService } from '../services/trip-data';
 import { Trip } from '../models/trip';
 
 
@@ -10,8 +10,8 @@ import { Trip } from '../models/trip';
   selector: 'app-edit-trip',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './edit-trip.component.html',
-  styleUrl: './edit-trip.component.css'
+  templateUrl: './edit-trip.html',
+  styleUrl: './edit-trip.css'
 })
 
 export class EditTripComponent implements OnInit {
